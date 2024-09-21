@@ -1,0 +1,136 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@300;600&display=swap');
+
+/* General styles for the body and form */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #2c3e50, #34495e); /* Dark blue gradient */
+    margin: 0;
+    padding: 20px;
+    color: #ecf0f1; /* Light gray */
+}
+
+h1 {
+    text-align: center;
+    color: #ecf0f1; /* Light gray */
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 25px;
+    background: #2c3e50; /* Dark blue background */
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid #1abc9c; /* Teal border */
+}
+
+fieldset {
+    border: 2px solid #1abc9c; /* Teal border */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #34495e; /* Slightly lighter dark blue background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+legend {
+    font-weight: 600;
+    padding: 0 15px;
+    color: #1abc9c; /* Teal */
+    background: #2c3e50; /* Dark blue */
+    border-radius: 6px;
+    font-size: 1.4em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: 'Montserrat', sans-serif;
+}
+
+label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: 600;
+    color: #ecf0f1; /* Light gray */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: calc(100% - 24px);
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 2px solid #1abc9c; /* Teal */
+    border-radius: 8px;
+    box-sizing: border-box;
+    background: #2c3e50; /* Dark blue background */
+    color: #ecf0f1; /* Light gray text */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #16a085; /* Slightly lighter teal */
+    box-shadow: 0 0 8px rgba(22, 160, 133, 0.3);
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.button-container {
+    text-align: center;
+}
+
+button {
+    background: linear-gradient(to right, #16a085, #1abc9c); /* Teal gradient */
+    border: none;
+    color: #ecf0f1; /* Light gray text */
+    padding: 14px 28px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-family: 'Montserrat', sans-serif;
+}
+
+button:hover {
+    background: linear-gradient(to right, #1abc9c, #16a085); /* Slightly darker teal gradient */
+    transform: scale(1.05);
+}
+
+button .btn-icon {
+    margin-right: 10px;
+}
+
+/* Styles for the generated resume output */
+#resumeOutput {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #34495e; /* Dark blue background */
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid #1abc9c; /* Teal border */
+}
+
+#resumeOutput h2 {
+    color: #1abc9c; /* Teal */
+    margin-top: 0;
+    font-size: 1.8em;
+    border-bottom: 3px solid #16a085; /* Slightly lighter teal border */
+    padding-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#resumeOutput p {
+    margin: 0;
+    line-height: 1.8;
+    color: #ecf0f1; /* Light gray */
+}
